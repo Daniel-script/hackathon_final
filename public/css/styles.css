@@ -1,0 +1,128 @@
+/***reeseteo los margin y padding*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***importo la libreria*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+/***estilos antes de la zona de arrastre*/
+
+  
+    
+    body {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(71, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(158, 5, 177, 1) 51%);
+    }
+
+    header {
+      margin-bottom: 7%;
+    }
+
+    h1 {
+
+      margin-left: 30%;
+      margin-top: 2%;
+      font-family: 'Architects Daughter', cursive;
+      color: rgb(255, 255, 255);
+    }
+
+    h3{
+      font-family: 'Architects Daughter', cursive;
+      color: white;
+    }
+    #info{
+      text-align: center !important;
+    }
+
+    /***aqui empieza el recuadro para arrastrar los archivos*/
+
+    #drop_zone {
+      border: 2px dashed #bbb;
+      border-radius: 20px;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #bbb;
+      margin: auto;
+      position: relative;
+    }
+
+    #file_input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+
+    }
+
+    #file_label {
+      cursor: pointer;
+      border-radius: 5% !important;
+      margin-top: 20%;
+    }
+    /***aquí empieza el footer*/
+    footer {
+      margin-top: 20%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+
+    #linkedin{
+      width: 50px !important;
+      height: 50px !important;
+    }
+
+    ul,li{
+      list-style: none;
+      font-family: 'Architects Daughter', cursive;
+      color: white;
+
+    }
+    
+    .mifotter3{
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    .mifotter{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .mifotter3 a{
+      margin-left: 70px;
+    }
+
+    .mifotter3 a:last-child{
+      margin-top: -20px;
+    }
+
+
+    #linea{
+      animation: slide 15s linear infinite;
+      color: white;
+    }
+    
+    @keyframes slide {
+      0% {
+          transform: translateX(-100%);
+      }
+      100% {
+          transform: translateX(100%);
+      }
+  }
